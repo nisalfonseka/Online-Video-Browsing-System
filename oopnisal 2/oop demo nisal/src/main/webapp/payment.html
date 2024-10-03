@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Net</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffff;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    background-color: #2a2a2a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+}
+
+.navbar h1{
+background-color: #2a2a2a;
+}
+
+.navbar logo{
+	background-color: #2a2a2a;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    background-color: #2a2a2a;
+}
+.menu ul li a:hover{
+    border-bottom: 4px solid #ffffff;
+    transition: 0.4s;
+}
+
+.login{
+background-color: #2a2a2a;
+}
+.login a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 30px;
+    border: 2px solid #ffffff;
+    background-color: #2a2a2a;
+}
+.login a:hover{
+   background-color: #565656;
+   transition: 0.2s; 
+}
+    </style>
+</head>
+
+	
+	<!-- horizontal navigation bar -->
+	
+	
+	<div class="navbar">
+			<div class="logo">
+				<h1>Watch Net</h1>
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="index.html">Videos</a></li>
+					<li><a href="package.html">Buy Premium</a></li>
+					<li><a href="payment.html">Content Creater</a></li>
+					
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="login">
+				<a href="login.html">Login</a>
+				<a href="Register.html">Register</a>
+			</div>
+		</div>
+	</div>
+
+<body>
+<style>
+.error-message {
+	color: red;
+}
+
+.body{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	text-transform: capitalize;
+	transition: all .2s linear;
+	background-color: #ffff;
+}
+
+.containerpay {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	min-height: 100vh;
+	background: #333;
+}
+
+.containerpay form {
+	padding: 20px;
+	width: 700px;
+	background: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+	background-color: #ffff;
+}
+
+.containerpay form .row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col {
+	flex: 1 1 250px;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .title {
+	font-size: 20px;
+	color: #333;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .inputBox {
+	margin: 15px 0;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .inputBox span {
+	margin-bottom: 10px;
+	display: block;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .inputBox input {
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 10px 15px;
+	font-size: 15px;
+	text-transform: none;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .inputBox input:focus {
+	border: 1px solid #000;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .flex {
+	display: flex;
+	gap: 15px;
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .flex .inputBox {
+	margin-top: 5px;
+	background-color: #ffff;
+}
+.containerpay form .row .col .selectt {
+
+	background-color: #ffff;
+}
+
+.containerpay form .row .col .inputBox img {
+	height: 34px;
+	margin-top: 5px;
+	filter: drop-shadow(0 0 1px #000);
+	background-color: #ffff;
+}
+
+.containerpay form .submit-btn {
+	width: 100%;
+	padding: 12px;
+	font-size: 17px;
+	background: #333;
+	color: #fff;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.containerpay form .submit-btn:hover {
+	background: #565656;
+}
+.selectt {
+    background-color: white;
+}
+
+.selectt select {
+    background-color: white;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+
+
+	<div class="containerpay">
+
+		
+		<form action="SaveServlet" method="post" id="checkoutForm" onsubmit="return validateForm()">
+		
+
+			<div class="row">
+
+				<div class="col">
+
+					<h3 class="title">user details</h3>
+
+					<div class="inputBox">
+						<span>Fullname :</span> <input type="text" name="name"
+							placeholder="Full Name">
+					</div>
+					<div class="inputBox">
+						<span>E mail :</span> <input type="email" name="email"
+							placeholder="example@example.com">
+					</div>
+
+					<div class="inputBox">
+						<span>Amount :</span> <input type="text" name="amount" >
+					</div>
+
+
+
+				</div>
+
+
+				<div class="col">
+
+					<h3 class="title">payment</h3>
+
+					<div class="inputBox">
+						<span>Cards accepted :</span> <img src="./images/card_img.jpg"
+							alt="">
+					</div>
+					<div class="inputBox">
+						<span>Name on Card :</span> <input type="text" name="cardname"
+							placeholder="name on card">
+					</div>
+					<div class="inputBox">
+						<span>Cardnumber :</span> <input type="tel" name="cardnumber"
+							placeholder="****************" maxlength="16">
+					</div>
+					<div class="flex">
+						<span class="inputbox">Exp month :</span> 
+					<div class="selectt">
+						
+						<select name="expmonth" id="month">
+                                <option value="Jan">Jan</option>
+                                <option value="Feb">Feb</option>
+                                <option value="Mar">Mar</option>
+                                <option value="Apr">Apr</option>
+                                <option value="May">May</option>
+                                <option value="Jun">Jun</option>
+                                <option value="Jul">Jul</option>
+                                <option value="Aug">Aug</option>
+                                <option value="Sep">Sep</option>
+                                <option value="Oct">Oct</option>
+                                <option value="Nov">Nov</option>
+                                <option value="Dec">Dec</option>
+                            </select>
+					</div>
+
+					
+						<div class="selectt">
+							<span>Exp year :</span> 
+								<select name="expyear" id="year">
+                                
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                            </select>
+						</div>
+						
+						</div>
+						<div class="inputBox">
+							<span>CVV :</span> <input type="password" name="cvv"
+								placeholder="123" maxlength="3" required>
+						</div>
+					
+
+				</div>
+
+			</div>
+
+			<input type="submit" value="proceed to checkout" class="submit-btn">
+
+		</form>
+
+	</div>
+
+
+
+
+
+
+	<div class="view">
+		<a href="ViewServlet">view</a>
+	</div>
+	
+	<script>
+    // Function to validate the form
+    function validateForm() {
+        // Fetching form elements
+        var name = document.forms["checkoutForm"]["name"].value;
+        var email = document.forms["checkoutForm"]["email"].value;
+        var amount = document.forms["checkoutForm"]["amount"].value;
+        var cardname = document.forms["checkoutForm"]["cardname"].value;
+        var cardnumber = document.forms["checkoutForm"]["cardnumber"].value;
+        var expmonth = document.forms["checkoutForm"]["expmonth"].value;
+        var expyear = document.forms["checkoutForm"]["expyear"].value;
+        var cvv = document.forms["checkoutForm"]["cvv"].value;
+
+        // Validating Full Name
+        if (name == "") {
+            alert("Full Name must be filled out");
+            return false;
+        }
+
+        // Validating Email
+        if (email == "") {
+            alert("Email must be filled out");
+            return false;
+        }
+
+        // Validating Amount
+        if (amount === "" || !/^\d+/.test(amount)) {
+    	alert("Amount must be a valid integer");
+   		return false;
+		}
+
+        // Validating Card Name
+        if (cardname == "") {
+            alert("Card Name must be filled out");
+            return false;
+        }
+
+        // Validating Card Number
+        if (cardnumber === "") {
+   		 alert("Card Number must be filled out");
+  		  return false;
+  		  
+  		  // must contain only digits
+		} else if (!/^\d+$/.test(cardnumber)) {
+	    alert("Card Number must contain only digits");
+  		  return false;
+  		  //length should be 16
+		} else if (cardnumber.length !== 16) {
+    alert("Card Number must be 16 digits");
+    return false;
+}
+
+        // Validating Expiry Month
+        if (expmonth == "") {
+            alert("Expiry Month must be filled out");
+            return false;
+        }
+
+        // Validating Expiry Year
+        if (expyear == "") {
+            alert("Expiry Year must be filled out");
+            return false;
+        } else if (expyear.length !== 4) {
+            alert("Expiry Year must be 4 digits");
+            return false;
+        }
+
+        // Validating CVV
+        if (cvv == "") {
+            alert("CVV must be filled out");
+            return false;
+        } else if (cvv.length !== 3) {
+            alert("CVV must be 3 digits");
+            return false;
+        }
+
+        // If all validations pass, return true
+        return true;
+    }
+</script>
+	
+
+	
+</body>
+
+</html>
